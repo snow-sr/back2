@@ -36,7 +36,5 @@ class BottleViewSet(ModelViewSet):
 class OrderViewSet(ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    # only see if authenticated
-    permission_classes = (IsAuthenticated)
 
 # Create your views here.
